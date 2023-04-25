@@ -1,14 +1,19 @@
-import { createServer } from "http";
-
+import express from "express";
+import bodyParser from "body-parser";
+import routes from "./routes/routes.js";
 const port = 3001;
-const server = createServer();
+const app = express();
 
-server.on("request", (request, response) => {
-    console.log(`URL: ${request.url}`);
-	response.end("Hello, Client! This is Server speaking...");
-});
+app.use(bodyParser.json());
+app.use(
+    bodyParser.urlencoded({
+		extended: true,
+	})
+);
 
-server.listen(port, (error) => {
+routes(app);
+
+const server = app.listen(port, (error) => {
     if (error) return console.log(`Error: ${error}`);
-	console.log(`Server is listening on port ${port}.`);
+	console.log(`Server listening on port ${server.address().port}.`);
 });
