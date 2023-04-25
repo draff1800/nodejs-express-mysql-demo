@@ -8,7 +8,7 @@ Interacts with a MySQL database and offers a range of GET, POST, PUT and DELETE 
 2) Run `npm install` in terminal.
 3) Run a local MySQL server. Add a database named `api`, and a table named `bosses`.
 4) Run `npm start` in terminal.
-5) Use `curl` commands to interact with the API, or navigate to `http://localhost:3001/bosses` in Chrome to view database data.
+5) Use `curl` commands in a (separate) terminal to interact with the API, or navigate to `http://localhost:3001/bosses` in Chrome to view database data.
 6) Edit the code and experiment to your heart's content :)
 
 
