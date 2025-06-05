@@ -1,4 +1,4 @@
-# node-express-mysql-demo
+# NodeJS-Express-MySQL Demo
 A REST API utilising Node.js and Express.
 
 Interacts with a MySQL database and offers a range of GET, POST, PUT and DELETE endpoints.
